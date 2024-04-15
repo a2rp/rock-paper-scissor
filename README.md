@@ -1,3 +1,7 @@
+
+![image](https://github.com/a2rp/rock-paper-scissor/assets/5670738/e978b933-d9f6-43e7-bd4c-0b7166c13a3a)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
