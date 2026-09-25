@@ -9,7 +9,7 @@ A responsive React game where you play Rock Paper Scissor against a randomly cho
 - Rock, Paper, and Scissor choices with icon-based controls.
 - Player and computer scores with round count.
 - Live round result and current choices.
-- Reset button and concise rules panel.
+- Reset button and concise rules panel.`n- Small-screen menu and floating back-to-top control.
 - Responsive fixed header and icon-only footer links.
 
 ## Tech stack
