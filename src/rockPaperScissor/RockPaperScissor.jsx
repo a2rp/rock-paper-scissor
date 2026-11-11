@@ -14,6 +14,9 @@ const beats = {
   scissor: "paper",
 };
 
+const getComputerMove = () =>
+  choices[Math.floor(Math.random() * choices.length)].value;
+
 const RockPaperScissor = () => {
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
@@ -23,7 +26,7 @@ const RockPaperScissor = () => {
   const [result, setResult] = useState("Choose a move to start the round.");
 
   const handleClick = (value) => {
-    const computerMove = choices[Math.floor(Math.random() * choices.length)].value;
+    const computerMove = getComputerMove();
     setPlayerChoice(value);
     setComputerChoice(computerMove);
     setRoundCount((count) => count + 1);

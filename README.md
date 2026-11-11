@@ -15,16 +15,18 @@ A responsive React game where you play rock, paper, scissors against a randomly 
 
 ## Tech stack
 
-React, Create React App, Sass modules, Material UI, and React Icons.
+React, Vite, Sass modules, and React Icons.
 
 ## Run locally
 
+Use Node.js 20.19 or newer, then run:
+
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-Create a production build with `npm run build` and deploy with `npm run deploy`.
+Run `npm run lint` and `npm run build` to check the project. Deploy the `dist` folder to GitHub Pages with `npm run deploy`.
 
 ## Live
 

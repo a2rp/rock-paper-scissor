@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 import { FiArrowUp, FiMenu, FiPlay, FiX } from "react-icons/fi";
 import RockPaperScissor from "./rockPaperScissor/RockPaperScissor";
-import "./index.css";
 
 const links = [
   { label: "Portfolio", href: "https://www.ashishranjan.net/", icon: FaGlobe },
@@ -32,8 +31,22 @@ const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    const mobileViewport = window.matchMedia("(max-width: 560px)");
+    if (!menuOpen || !mobileViewport.matches) {
+      document.body.style.overflow = "";
+      return undefined;
+    }
+
+    document.body.style.overflow = "hidden";
+    const closeMenuOnDesktop = (event) => {
+      if (!event.matches) {
+        setMenuOpen(false);
+      }
+    };
+    mobileViewport.addEventListener("change", closeMenuOnDesktop);
+
     return () => {
+      mobileViewport.removeEventListener("change", closeMenuOnDesktop);
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
@@ -42,7 +55,7 @@ const App = () => {
     <div className="game-app">
       <header className="game-header">
         <a className="game-brand" href="#top" aria-label="Rock Paper Scissors home">
-          <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Ashish Ranjan logo" />
+          <img src={import.meta.env.BASE_URL + "logo.png"} alt="Ashish Ranjan logo" />
           <span><small>FRONTEND GAME</small><strong>Rock Paper Scissors</strong></span>
         </a>
 
