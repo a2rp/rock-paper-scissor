@@ -1,15 +1,16 @@
-# Rock Paper Scissor
+# Rock Paper Scissors
 
-A responsive React game where you play Rock Paper Scissor against a randomly choosing computer opponent.
+A responsive React game where you play rock, paper, scissors against a randomly choosing computer opponent.
 
-![Rock Paper Scissor preview](screenshot.png)
+![Rock Paper Scissors preview](screenshot.png)
 
 ## Features
 
-- Rock, Paper, and Scissor choices with icon-based controls.
+- Rock, paper, and scissors choices with icon-based controls.
 - Player and computer scores with round count.
 - Live round result and current choices.
-- Reset button and concise rules panel.`n- Small-screen menu and floating back-to-top control.
+- Reset button and concise rules panel.
+- Small-screen menu and floating back-to-top control.
 - Responsive fixed header and icon-only footer links.
 
 ## Tech stack

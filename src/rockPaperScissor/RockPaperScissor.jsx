@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 const choices = [
   { value: "rock", label: "Rock", icon: FaHandRock },
   { value: "paper", label: "Paper", icon: FaHandPaper },
-  { value: "scissor", label: "Scissor", icon: FaHandScissors },
+  { value: "scissor", label: "Scissors", icon: FaHandScissors },
 ];
 
 const beats = {
@@ -93,7 +93,7 @@ const RockPaperScissor = () => {
 
       <div className={styles.rules}>
         <p className={styles.eyebrow}>Rules</p>
-        <div><span>Rock beats Scissor</span><span>Scissor beats Paper</span><span>Paper beats Rock</span></div>
+        <div><span>Rock beats scissors</span><span>Scissors beat paper</span><span>Paper beats rock</span></div>
       </div>
     </section>
   );

@@ -41,9 +41,9 @@ const App = () => {
   return (
     <div className="game-app">
       <header className="game-header">
-        <a className="game-brand" href="#top" aria-label="Rock Paper Scissor home">
+        <a className="game-brand" href="#top" aria-label="Rock Paper Scissors home">
           <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Ashish Ranjan logo" />
-          <span><small>FRONTEND GAME</small><strong>Rock Paper Scissor</strong></span>
+          <span><small>FRONTEND GAME</small><strong>Rock Paper Scissors</strong></span>
         </a>
 
         <div className="game-header-actions">
